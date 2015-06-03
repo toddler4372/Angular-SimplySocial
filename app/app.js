@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.allPosts',
   'myApp.Photos',
+  'myApp.Videos',
   'myApp.Settings'
 ]).
 config(['$routeProvider', function($routeProvider) {
