@@ -60,8 +60,16 @@
     </header>
         <section id="add-post">
           <div id="menu-bg">
-            <div class="post-input center"><input type="text" placeholder="What's on your mind?" class="post-form"></div>
-              <div class="center">
+            <div class="post-input center-area">
+              <div class="center-area middle-align">
+                <input type="text" placeholder="What's on your mind?" class="post-form">
+                  <ul class="add-items">
+                    <li><img src="images/photo-icon.png" alt="Add Photo" id="icon-photo"><a href="">Add Photo</a></li>
+                    <li><img src="images/video-icon.png" alt="Add Video" id="icon-video"><a href="">Add Video</a></li>
+                  </ul>
+              </div>
+            </div>
+              <div class="center-area">
                 <div class="bottom-align">
                   <ul class="menu">
                     <li><a href="#/allPosts">All Posts</a></li>
@@ -81,6 +89,18 @@
   <![endif]-->
 
   <div ng-view></div>
+
+  <footer>
+    <div class="footer-links center-area">
+      <ul>
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">SUPPORT</a></li>
+          <li><a href="">PRIVACY</a></li>
+          <li><a href="">TERMS</a></li>
+          <li><span>&copy;</span> 2014 SIMPLYSOCIAL</li>
+      </ul>
+    </div>
+  </footer>
 </div>
 
   <!-- In production use:
