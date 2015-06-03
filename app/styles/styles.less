@@ -48,7 +48,7 @@ body {
 }
 
 #logo {
-	padding-left: 59px;
+	padding-left: 100px;
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%);
@@ -162,7 +162,7 @@ a#arrow {
 	padding: 0;
 	display: table-cell;
 	vertical-align: middle;
-	padding-bottom: 25px;
+	padding-bottom: 75px;
 }
 
 .bottom-align {
@@ -552,4 +552,82 @@ img#reply, img#like {
 	text-align: center;
 }
 
+#search-mobile {
+	display: none;
+}
 
+#list, #grid {
+	float:right;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+#grid {margin-right: -40px;}
+#list {margin-right: -15px;}
+
+
+/*  MEDIA QUERIES  */
+
+/*  < 1500 & > 1024  */
+@media only screen and (min-width: 1024px) and (max-width: 1449px) {
+	#menu-bg {width: 1024px;}
+	#top-links {width: 1024px;}
+	#wrap {width: 1024px;}
+	.menu-top {margin-right: 75px;}
+	#logo {padding-left: 75px;}
+}
+
+/*  < 1024 & > 768  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	#menu-bg {width: 768px;}
+	#top-links {width: 768px;}
+	#wrap {width: 768px;}
+	.menu-top {margin-right: 50px;}
+	#logo {padding-left: 50px;}
+	#grid {margin-right: -38px;}
+	#list {margin-right: -10px;}
+}
+
+/*  < 768 & > 575  */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+	#menu-bg {width: 575px;}
+	#top-links {width: 575px;}
+	#wrap {width: 575px;}
+	.menu-top {margin-right: 25px;}
+	#logo {padding-left: 25px;}
+	ul.menu {padding-left: 86px;}
+	.post-input {width: 400px;}
+	.menu-top {top: 25%;margin-right: 45px;}
+	.input {display: none;}
+	#search-mobile {display: inline-block;padding-right: 10px;}
+	#message {padding-right: 15px;}
+	#list {margin-right: 15px;}
+	#grid {margin-right: 50px;}
+}
+
+/*  < 575 & > 320  */
+@media only screen and (min-width: 400px) and (max-width: 574px) {
+	#menu-bg {width: 400px;display: block;}
+	#top-links {width: 400px;}
+	#wrap {width: 400px;}
+	.menu-top {margin-right: 25px;}
+	#logo {padding-left: 25px;}
+	ul.menu {padding-left: 86px;}
+	.post-input {width: 300px;border-radius: 0;padding-top: 20px;}
+	.menu-top {top: 25%;margin-right: 45px;}
+	.input {display: none;}
+	#search-mobile {display: inline-block;padding-right: 10px;}
+	#message {padding-right: 15px;}
+	section#posts {width: 400px;}
+	.center-area, .feed {width: 400px;}
+	.footer-links ul {padding-left: 60px;}
+	.photo-text {width: 400px;font-size: 30px;}
+	ul.menu {padding-left: 35px;}
+	.add-items {bottom: 15px;}
+	.bottom-align {width: 400px;}
+	.bottom-align ul li a {padding: 0 0px 14px 0px;}
+	.menu {margin-right: 70px;}
+	.content {width: 77%;}
+	.photo-submit img {width: 400px;}
+	#copyright {margin-left: 20%;margin-top: 20px;}
+}
