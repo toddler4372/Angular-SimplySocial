@@ -92,7 +92,7 @@
 				</div>
 				<div class="notification-toggle">
 					<div class="radio-options">
-						<input type="radio" name="radio-z" id="radio4" class="css-checkbox" />
+						<input type="radio" id="radio4" class="css-checkbox" name="radio" />
 						<label for="radio4" class="css-label radGroup2"></label>
 					</div>
 					<div class="option-privacy">
@@ -101,7 +101,7 @@
 				</div>
 				<div class="notification-toggle">
 					<div class="radio-options">
-						<input type="radio" name="radio-z" id="radio5" class="css-checkbox" />
+						<input type="radio" id="radio5" class="css-checkbox" name="radio" />
 						<label for="radio5" class="css-label radGroup2"></label>
 					</div>
 					<div class="option-privacy">
@@ -110,7 +110,7 @@
 				</div>
 				<div class="notification-toggle">
 					<div class="radio-options">
-						<input type="radio" name="radio-z" id="radio6" class="css-checkbox" />
+						<input type="radio" id="radio6" class="css-checkbox" name="radio" />
 						<label for="radio6" class="css-label radGroup2"></label>
 					</div>
 					<div class="option-privacy">
@@ -121,6 +121,25 @@
 		</div>
 	</div>
 	<div class="save"><button>Save Changes</button></div><br><br>
+
+	<!-- SEPARATE RADIO BUTTONS -->
+	<script type="text/javascript">
+        var allRadios = document.getElementsByName('radio');
+        var y;
+        var x = 0;
+        for(x = 0; x < allRadios.length; x++){
+
+            allRadios[x].onclick = function() {
+                if(y == this){
+                    this.checked = false;
+                    y = null;
+                }else{
+                    y = this;
+                }
+            };
+        }
+    </script>
+
 
 
 
