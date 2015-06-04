@@ -180,7 +180,11 @@
 						<div class="date">
 							<ul class="margin-zero">
 								<li><a href=""><img src="images/reply.png" alt="Add Photo" id="reply"></a></li>
-								<li><div class="like"></div></li>
+								<li><div class="like"
+										ng-class="{'like': !isActive, 'like click': isActive}"
+            							ng-init="isActive = false"
+            							ng-click="isActive = !isActive">
+        							</div></li>
 								<li class="time-posted">1h</li>
 							</ul>
 						</div>

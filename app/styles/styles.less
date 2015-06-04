@@ -813,7 +813,7 @@ input.account, input.reply {
 	line-height: 1.2em;
 	padding: 5px;
 	padding-left: 40px;
-	padding-bottom: 0px;
+	/*padding-bottom: 0px;*/
 	border: 1px solid @links;
 	border-radius: 0.3rem;
 	-webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -1019,7 +1019,7 @@ label.css-label {
 
 .down_facing_arrow, .up_facing_arrow {
 	background: transparent;
-	background-image: url(../images/arrow-small.png);
+	background-image: url(../images/arrow-small.png);	
 	background-repeat: no-repeat;
 	background-position: 147px 8px;
 }
@@ -1051,7 +1051,6 @@ label.css-label {
 	background: url(../images/like.png) no-repeat 0px 0px;
 }
 
-
 /* INPUT PLACEHOLDER STYLES  */
 
 input::-webkit-input-placeholder { color: #FFF; }
@@ -1064,11 +1063,11 @@ input.reply::-moz-placeholder { color: #bec3cc; }
 input.reply:-ms-input-placeholder { color: #bec3cc; }
 input.reply:-moz-placeholder { color: #bec3cc; }
 
-input.account::-webkit-input-placeholder {color: #bec3cc;}
-input.account:-moz-placeholder {color: #bec3cc;}
-input.account::-moz-placeholder {color: #bec3cc;}
-input.account:-ms-input-placeholder {color: #bec3cc;  
-}
+input.account::-webkit-input-placeholder {color: #bec3cc;padding-top: 2px;}
+input.account:-moz-placeholder {color: #bec3cc;padding-top: 2px;}
+input.account::-moz-placeholder {color: #bec3cc;padding-top: 2px;}
+input.account:-ms-input-placeholder {color: #bec3cc;padding-top: 2px;}
+
 /*  MEDIA QUERIES  */
 
 /*  < 1500 & > 1024  */
