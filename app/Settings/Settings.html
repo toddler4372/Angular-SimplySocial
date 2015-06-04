@@ -91,28 +91,19 @@
 					</div>
 				</div>
 				<div class="notification-toggle">
-					<div class="radio-options">
-						<input type="radio" id="radio4" class="css-checkbox" name="radio" />
-						<label for="radio4" class="css-label radGroup2"></label>
-					</div>
+					<li><div class="radio-option"></div></li>
 					<div class="option-privacy">
 						<p>add a location to my posts</p>
 					</div>
 				</div>
 				<div class="notification-toggle">
-					<div class="radio-options">
-						<input type="radio" id="radio5" class="css-checkbox" name="radio" />
-						<label for="radio5" class="css-label radGroup2"></label>
-					</div>
+					<li><div class="radio-option"></div></li>
 					<div class="option-privacy">
 						<p>let others find me by my email address</p>
 					</div>
 				</div>
 				<div class="notification-toggle">
-					<div class="radio-options">
-						<input type="radio" id="radio6" class="css-checkbox" name="radio" />
-						<label for="radio6" class="css-label radGroup2"></label>
-					</div>
+					<li><div class="radio-option"></div></li>
 					<div class="option-privacy">
 						<p>tailor ads based on my information</p>
 					</div>
@@ -122,24 +113,32 @@
 	</div>
 	<div class="save"><button>Save Changes</button></div><br><br>
 
-	<!-- SEPARATE RADIO BUTTONS -->
+	<!-- SEPARATE RADIO BUTTON BEHAVIOR -->
 	<script type="text/javascript">
         var allRadios = document.getElementsByName('radio');
-        var y;
-        var x = 0;
-        for(x = 0; x < allRadios.length; x++){
+		var y;
+		var x = 0;
+		for(x = 0; x < allRadios.length; x++) {
 
-            allRadios[x].onclick = function() {
-                if(y == this){
-                    this.checked = false;
-                    y = null;
-                }else{
-                    y = this;
-                }
-            };
-        }
+		     allRadios[x].onclick = function() {
+		         if (y == this) {
+		             this.checked = false;
+		             y = null;
+		         } else 
+		             y = this;
+		         };
+		     }
     </script>
 
+    <!--  TOGGLE FUNCTION RADIO BUTTON -->
+	<script>
+	$(document).ready(function() {
+		$('.radio-option').click(function () {
+			$(this).not(this).removeClass('click');
+			$(this).toggleClass("click");
+		});
+	});
+	</script>
 
 
 

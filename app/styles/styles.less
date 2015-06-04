@@ -950,8 +950,19 @@ label.css-label {
 	user-select: none;
 }
 
-.radio-options {
+.radio-options, .radio-option {
 	float: left;
+}
+
+.radio-option {
+	cursor: pointer;
+	height: 23px;
+	width: 23px;
+	background: url(../images/checkbox2.png) no-repeat 0px 0px;
+}
+
+.radio-option.click {
+	background: url(../images/checkbox1.png) no-repeat 0px 0px;
 }
 
 /*  COLLAPSIBLE DIV  */
@@ -1151,6 +1162,4 @@ input.account:-ms-input-placeholder {color: #bec3cc;padding-top: 2px;}
 	.save {margin-left: 8px;}
 	input.post-form {width: 330px;}
 }
-
-
 
