@@ -13,8 +13,8 @@
 						<div class="date">
 							<ul class="margin-zero">
 								<li><a href=""><img src="images/reply.png" alt="Add Photo" id="reply"></a></li>
-								<li><a href=""><img src="images/like.png" alt="Add Video" id="like"></a></li>
-								<li>3m</li>
+								<li><div class="like"></div></li>
+								<li class="time-posted">1h</li>
 							</ul>
 						</div>
 					</div>
@@ -40,8 +40,8 @@
 							<div class="date expanded-date">
 								<ul class="margin-zero">
 									<li><a href=""><img src="images/reply.png" alt="Add Photo" id="reply"></a></li>
-									<li><a href=""><img src="images/like.png" alt="Add Video" id="like"></a></li>
-									<li>1h</li>
+									<li><div class="like"></div></li>
+									<li class="time-posted">1h</li>
 								</ul>
 							</div>
 							<div class="text">
@@ -65,8 +65,8 @@
 							<div class="date expanded-date">
 								<ul class="margin-zero">
 									<li><a href=""><img src="images/reply.png" alt="Add Photo" id="reply"></a></li>
-									<li><a href=""><img src="images/like.png" alt="Add Video" id="like"></a></li>
-									<li>1h</li>
+									<li><div class="like"></div></li>
+									<li class="time-posted">1h</li>
 								</ul>
 							</div>
 							<div class="text">
@@ -99,8 +99,8 @@
 						<div class="date">
 							<ul class="margin-zero">
 								<li><a href=""><img src="images/reply.png" alt="Add Photo" id="reply"></a></li>
-								<li><a href=""><img src="images/like.png" alt="Add Video" id="like"></a></li>
-								<li>25m</li>
+								<li><div class="like"></div></li>
+								<li class="time-posted">25m</li>
 							</ul>
 						</div>
 					</div>
@@ -128,8 +128,8 @@
 						<div class="date">
 							<ul class="margin-zero">
 								<li><a href=""><img src="images/reply.png" alt="Add Photo" id="reply"></a></li>
-								<li><a href=""><img src="images/like.png" alt="Add Video" id="like"></a></li>
-								<li>1h</li>
+								<li><div class="like"></div></li>
+								<li class="time-posted">1h</li>
 							</ul>
 						</div>
 					</div>
@@ -154,8 +154,8 @@
 						<div class="date">
 							<ul class="margin-zero">
 								<li><a href=""><img src="images/reply.png" alt="Add Photo" id="reply"></a></li>
-								<li><a href=""><img src="images/like.png" alt="Add Video" id="like"></a></li>
-								<li>1h</li>
+								<li><div class="like"></div></li>
+								<li class="time-posted">1h</li>
 							</ul>
 						</div>
 					</div>
@@ -180,8 +180,8 @@
 						<div class="date">
 							<ul class="margin-zero">
 								<li><a href=""><img src="images/reply.png" alt="Add Photo" id="reply"></a></li>
-								<li><a href=""><img src="images/like.png" alt="Add Video" id="like"></a></li>
-								<li>1h</li>
+								<li><div class="like"></div></li>
+								<li class="time-posted">1h</li>
 							</ul>
 						</div>
 					</div>
@@ -242,8 +242,9 @@ $(document).ready(function() {
 <!--  TOGGLE FUNCTION LIKE BUTTON -->
 <script>
 $(document).ready(function() {
-	$('#like').click(function () {
-		$('#like').toggleClass("highlight");
+	$('.like').click(function () {
+		$(this).not(this).removeClass('click');
+		$(this).toggleClass("click");
 	});
 });
 </script>

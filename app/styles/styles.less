@@ -570,9 +570,9 @@ a.author {
 	font-size: 14px;
 }
 
-img#reply, img#like {
+img#reply {
 	padding-right: 15px;
-	padding-bottom: 3px;
+	padding-bottom: 6px;
 }
 
 .margin-zero {
@@ -582,7 +582,12 @@ img#reply, img#like {
 
 .date ul li, .expanded-date {
 	display: inline-block;
+	vertical-align: middle;
 } 
+
+.time-posted {
+	margin-bottom: 2px;
+}
 
 .expanded-date {
 	float:right;
@@ -1031,6 +1036,19 @@ label.css-label {
 
 .header.highlight {
 	background: url(../images/up-arrow-small.png) no-repeat 57px 7px;
+}
+
+.like {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin-right: 10px;
+    margin-bottom: 2px;
+	background: url(../images/unlike.png) no-repeat 0px 0px;
+}
+
+.like.click {
+	background: url(../images/like.png) no-repeat 0px 0px;
 }
 
 

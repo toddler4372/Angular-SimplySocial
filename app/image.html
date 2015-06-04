@@ -89,8 +89,8 @@ input.reply {
                 <div class="date">
                   <ul class="margin-zero">
                     <li><a href=""><img src="images/reply.png" alt="Add Photo" id="reply"></a></li>
-                    <li><a href=""><img src="images/like.png" alt="Add Video" id="like"></a></li>
-                    <li>25m</li>
+                    <li><div class="like"></div></li>
+                    <li class="time-posted">25m</li>
                 </ul>
             </div>
         </div>
@@ -105,3 +105,13 @@ input.reply {
 </div>
 </div>
 </div>
+
+<!--  TOGGLE FUNCTION LIKE BUTTON -->
+<script>
+$(document).ready(function() {
+    $('.like').click(function () {
+        $(this).not(this).removeClass('click');
+        $(this).toggleClass("click");
+    });
+});
+</script>
