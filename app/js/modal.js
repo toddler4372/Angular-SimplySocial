@@ -1,11 +1,11 @@
 
-      var modal = (function(){
-        var 
-        method = {},
-        $overlay,
-        $modal,
-        $content,
-        $close;
+var modal = (function(){
+  var 
+  method = {},
+  $overlay,
+  $modal,
+  $content,
+  $close;
 
         // Center the modal in the viewport
         method.center = function () {
@@ -65,18 +65,18 @@
         return method;
       }());
 
-      // Wait until the DOM has loaded before querying the document
+      // Calls
       $(document).ready(function() {
 
         $('#message').click(function(e) {
           $.get('popup-form.html', function(data){
-		    modal.open({content: data});
-		      });
+            modal.open({content: data});
+          });
         });
 
         $('#test').click(function(e) {
           $.get('popup-form.html', function(data){
-        modal.open({content: data});
+            modal.open({content: data});
           });
         });
 
