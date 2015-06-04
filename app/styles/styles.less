@@ -1001,20 +1001,20 @@ label.css-label {
 	padding-top: 6px;
 }
 
-#expand-button {
+*#expand-button {
 	outline: 0;
 	text-decoration: none;
 	color: #bec3cc;
 	cursor: pointer;
 	font-weight: 200;
 	font-size: 12px;
-	padding-left: 92px;
+	margin-left: 92px;
 	padding-bottom: 25px;
 }
 
 .down_facing_arrow, .up_facing_arrow {
 	background: transparent;
-	background-image: url(../images/up-arrow-small.png);
+	background-image: url(../images/arrow-small.png);
 	background-repeat: no-repeat;
 	background-position: 147px 8px;
 }
@@ -1022,6 +1022,17 @@ label.css-label {
 .down_facing_arrow {
 	background-image: url(../images/down-arrow-small.png);
 }
+
+.header {
+	height: 4px;
+	width: 80px;
+	background: url(../images/down-arrow-small.png) no-repeat 57px 8px;
+}
+
+.header.highlight {
+	background: url(../images/up-arrow-small.png) no-repeat 57px 7px;
+}
+
 
 /* INPUT PLACEHOLDER STYLES  */
 

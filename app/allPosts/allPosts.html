@@ -24,10 +24,8 @@
 					</div>
 				</div>
 			</div>
-
-
 			<div class="container">
-				<div class="header down_facing_arrow" id="expand-button"><span>Expand</span></div>
+				<div class="header" id="expand-button"><span>Expand</span></div>
 				<div class="post-content no-margins" id="expanded-content">
 					<div class="col-wrapper">
 						<div class="col1">
@@ -85,11 +83,6 @@
 
 				</div>
 			</div>
-
-
-
-
-
 		</div>
 	</div>
 	<div class="feed-box next">
@@ -222,14 +215,20 @@ $(".header").click(function () {
 	            return $content.is(":visible") ? "Collapse" : "Expand";
 	        });
 	    });
-	    $(".header").removeClass("down_facing_arrow");
-	    $(".header").addClass("up_facing_arrow");
 	});
+</script>
+
+<!--  TOGGLE FUNCTION EXPAND BUTTON -->
+<script>
+$(document).ready(function() {
+	$('.header').click(function () {
+		$('.header').toggleClass("highlight");
+	});
+});
 </script>
 
 <!-- MODAL IMAGE POPUP -->
 <script>
-
 $(document).ready(function() {
 	$('#photo').click(function(e) {
 		e.stopPropagation();
@@ -238,6 +237,14 @@ $(document).ready(function() {
 		});
 	});
 });
+</script>
 
+<!--  TOGGLE FUNCTION LIKE BUTTON -->
+<script>
+$(document).ready(function() {
+	$('#like').click(function () {
+		$('#like').toggleClass("highlight");
+	});
+});
 </script>
 
